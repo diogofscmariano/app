@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+.root {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+local-app {
+  padding: 10px;
+}
+
+local-app,
+react-app,
+vue-app {
+  flex: 1;  
+}
