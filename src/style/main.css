@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background: #f2f2f2;
@@ -6,16 +7,19 @@ html, body {
 
 .root {
   display: flex;
+  min-height: 100vh;
+  /* flex-wrap: wrap; */
   flex-direction: row;
-  height: 100vh;
 }
 
-local-app {
+local-app h2 {
   padding: 10px;
 }
 
 local-app,
 react-app,
 vue-app {
-  flex: 1;  
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
 }
